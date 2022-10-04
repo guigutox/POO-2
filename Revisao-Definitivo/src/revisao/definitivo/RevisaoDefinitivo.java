@@ -21,6 +21,7 @@ public class RevisaoDefinitivo {
         cc.depositar(1050);
         System.out.println(""+cc.titular.toString());
         System.out.println(""+cc.toString());
+        System.out.println("Valor do tributo: "+cc.getValorImposto());
         
         System.out.println("\n////////////////\n");
         
@@ -30,6 +31,7 @@ public class RevisaoDefinitivo {
         cc.depositar(500);
         System.out.println(""+cp.titular.toString());
         System.out.println(""+cp.toString());
+        cc.imprimirSaldo(cc.saldo);
         
         
     }

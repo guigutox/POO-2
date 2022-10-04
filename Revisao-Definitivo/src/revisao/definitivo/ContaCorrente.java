@@ -8,7 +8,7 @@ package revisao.definitivo;
  *
  * @author guilh
  */
-public class ContaCorrente extends ContaBancaria{
+public class ContaCorrente extends ContaBancaria implements Tributavel{
     
     public double limiteespecial;
 
@@ -22,7 +22,10 @@ public class ContaCorrente extends ContaBancaria{
         return "Conta Corrente\nSaldo:"+this.saldo;
     }
 
-    
+    public double getValorImposto(){
+        
+        return (this.saldo/100);
+    }
     
     
     

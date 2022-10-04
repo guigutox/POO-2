@@ -8,6 +8,10 @@ package revisao.definitivo;
  *
  * @author guilh
  */
+
+
+
+
 public class ContaBancaria {
     
     public int numero;
@@ -41,7 +45,9 @@ public class ContaBancaria {
     }
 
 
-    
+   static void imprimirSaldo(double saldo){
+        System.out.println("O saldo e: "+saldo);
+}
      
     
 }
